@@ -11,9 +11,9 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/images/**") // 매핑이름
-		.addResourceLocations("file:////Users/pizza/STS3/SpringWorkspace/product_images/",
-				      			"file:///usr/local/project/product_images/",
-							  "file:////Users/pizza/STS3/SpringWorkspace/upload/");
+		.addResourceLocations(""file:///usr/local/project/product_images/");
+				      //file:////Users/pizza/STS3/SpringWorkspace/product_images/",
+							 // "file:////Users/pizza/STS3/SpringWorkspace/upload/");
 								// upload 폴더 경로 설정(동일한 이름 /images 사용)
 		
 		registry.addResourceHandler("/audio/**") // 매핑이름
