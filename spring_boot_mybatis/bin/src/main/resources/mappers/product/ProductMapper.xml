@@ -18,12 +18,14 @@
 	SELECT * FROM product ORDER BY prdNO <!-- 대,소문자 모두 가능 -->
 </select> 
 
+
 <!-- 가격이 500,000원 이상인 상품만 선택 -->
 <!-- <select id="listAllProduct" resultMap="prdResult"> 
 	<![CDATA[
 	SELECT * FROM product WHERE prdPrice >= 500000
 	]]>
 </select> -->
+
 
 <!-- 상품 등록 -->
 <insert id="insertProduct" parameterType="com.spring_boot_mybatis.project.model.ProductVO"> <!--Product 하나 통째로 받아옴. -->
